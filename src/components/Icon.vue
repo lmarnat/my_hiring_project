@@ -3,17 +3,16 @@
 </template>
 
 <script>
-  let availableName = [
-    'sr-share',
-    'sr-settings',
-    'sr-like',
-    'sr-filter'
-  ]
-
   export default {
     name: "icon",
     data: function () {
       return {
+        availableName: [
+          'sr-share',
+          'sr-settings',
+          'sr-like',
+          'sr-filter'
+        ]
       }
     },
     props: {
@@ -23,7 +22,7 @@
       },
     },
     created() {
-      if (!availableName.includes(this.type)) {
+      if (!this.availableName.includes(this.type)) {
         throw new Error("Icon "+ this.type + " not found in securating-icons.otf")
       }
     },
