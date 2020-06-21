@@ -33,7 +33,7 @@
 <style scoped>
   @font-face {
     font-family: 'securating-icons';
-    src: url("../assets/fonts/securating-icons.ttf") format('truetype');
+    src: url("../assets/fonts/securating-icons.otf") format('opentype');
     font-weight: normal;
     font-style: normal;
     font-display: block;
